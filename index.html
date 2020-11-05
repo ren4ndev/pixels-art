@@ -5,60 +5,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Paleta de Cores</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bulma.min.css">
     </head>
     <body>
-        <h1 id="title">Paleta de Cores</h1>
-        <div class="color-palette" id="color-palette">
-            <div class="color black selected"></div>
-            <div class="color color1"></div>
-            <div class="color color2"></div>
-            <div class="color color3"></div>
-        </div>
+        <section class="container">
+            <header class="header">
+                <h1 class="title is-2">Pixels Art</h1>
+            </header>
 
-        <div>
-            <input id="board-size" type="number" min="1">
-            <button id="generate-board">VQV</button>
-        </div>
-
-        <button class="clear-board" id="clear-board">Limpar</button>
-
-        <div class="pixel-board" id="pixel-board">
-            <div class="row">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
+            <div class="container paleta">
+                <h2 class="title is-5" id="title">Paleta de Cores</h2>
+                <div class="color-palette" id="color-palette">
+                    <div class="color black selected"></div>
+                    <div class="color color1"></div>
+                    <div class="color color2"></div>
+                    <div class="color color3"></div>
+                </div>
             </div>
-            <div class="row">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
+    
+            <label class="label" for="">Tamanho do quadro</label>
+            <div class="form">
+                <input class="input is-primary" id="board-size" type="number" min="1" placeholder="">
+                <button class="button is-primary" id="generate-board">VQV</button>
             </div>
-            <div class="row">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
+            <div class="board">
+                <button class="clear-board button is-danger" id="clear-board">Limpar board</button>
+        
+                <div class="pixel-board" id="pixel-board">
+                    <div class="row">
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                    </div>
+                    <div class="row">
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                    </div>
+                    <div class="row">
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                    </div>
+                    <div class="row">
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                    </div>
+                    <div class="row">
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
-            <div class="row">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
-        </div>
+        </section>
         <script src="script.js"></script>
     </body>
 </html>
